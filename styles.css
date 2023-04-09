@@ -424,7 +424,7 @@ a{
 }
 
 /* For screens with a maximum width of 576px */
-@media (max-width: 400px) {
+@media (max-width: 560px) {
 
   .container{
     width:100vh;
