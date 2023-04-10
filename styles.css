@@ -1048,6 +1048,16 @@ a{
     margin-top: 1rem;
     margin-bottom: -2.5rem;
   }
+  .formfield{
+    font-size:12px;
+    font-weight:400;
+  }
+  #submit-btn{
+    font-size: 1rem;
+  }
+  .submit-icon{
+    font-size:1rem;
+  }
 }
 
   /* ----------------Footer----------------------  */
