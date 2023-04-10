@@ -228,6 +228,7 @@ a{
     color: black;
   }
 
+
   .hero-section-right{
     position:relative;
   }
@@ -358,7 +359,23 @@ a{
     }
   }
 
-  /* ----------------------newproperties---------------- */
+  /* ----------------------media Query---------------- */
+  @media (max-width: 576px){
+    .user-image{
+      max-height: 320px;
+      max-width: 320px;
+      padding:2.5rem;
+      filter:grayscale(1);
+      transition:all 1s;
+      animation: scaleImage 5s linear infinite;
+    }
+    
+    .user-image img{
+      z-index:-9;
+      max-width: 320px;
+      max-height: 285px;
+    }
+  }
 
   /* For screens with a maximum width of 768px */
 @media (max-width: 768px) {
@@ -366,13 +383,15 @@ a{
     visibility: hidden;
   }
 
+  .container{
+    max-width: 100%;
+  }
 
-.container{
-    width:100vh;
-    margin:0 auto;
+
+.skills_container {
+  margin-right: var(--mb-2);
+  
 }
-
-
 
   .hero-section {
     width: 100%;
@@ -418,23 +437,41 @@ a{
   #btn{
     text-align: center;
   }
+
+  .link-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-wrapper{
+    max-width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: -3rem;
+    margin-top: -2rem;
+  }
+
+  .footer-faded-text{
+    position:absolute;
+    left:0;
+    bottom:0;
+    color:white;
+    user-select:none;
+    font-size:5em;
+  }
 }
 
 /* For screens with a maximum width of 576px */
-@media (max-width: 400px) {
-
-  /* .container{
-    width:100vh;
-    margin:0 auto;
-    overflow-x: auto;
-} */
-
+@media (max-width: 576px) {
+.container{
+  max-width: 100%;
+}
 .hero-section {
-  max-width: 300px;
+  max-width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-left: var(--mb-2-5);
 }
 .hero-section-left{
   width: 45vh;
@@ -480,16 +517,18 @@ a{
   }
 
   .footer-faded-text{
-   visibility: hidden;
+    font-size:2em;
   }
 
   .link-wrapper{
-    margin-right: var(--mb-2-5);
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
   }
 
   .footer-wrapper{
+    max-width: 100%;
     flex-direction: column;
-    max-width: 35vh;
     text-align: center;
     margin-bottom: -3rem;
     margin-top: -2rem;
@@ -1055,4 +1094,11 @@ a{
     display:flex;
     gap:1rem;
   }
+
+  @media (max-width: 768px){
+    .footer-faded-text{
+      font-size:2em;
+    }
+  }
+
 
