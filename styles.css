@@ -77,6 +77,7 @@
 
 .container{
     width:1200px;
+    max-width: 100%;
     margin:0 auto;
 }
 
@@ -549,9 +550,8 @@ a{
   }
 
   .page-header{
-    color:var(--bgOrange);
-    font-size:90px;
-     text-align:center;
+    font-size: var(--h1-font-size);
+  text-align: center;
     padding-top:30px;
   }
   .project-container{
@@ -719,9 +719,8 @@ a{
   @media (max-width:1300px) {
     .page-header {
       padding-top: 30px;
-      color: var(--bgOrange);
-      text-align: center;
-      font-size: 40px;
+      font-size: var(--h1-font-size);
+      text-align: center;  
     }
     .project-container {
       padding: 5px;
@@ -965,22 +964,136 @@ a{
   text-align: center;
 }
 
+/* ------------------------Achivements--------------- */
+
+.Achievement_container{
+  width: 45%;
+  margin:2rem auto;
+  padding:3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.Achievement_title{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+}
+
+.Achievement_section{
+  
+  background-color: rgb(231,231,231);
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: var(--mb-2);
+  margin-top: -0.5rem;
+  border: none;
+  box-shadow: 2px 2px 10px #1f1f1f;
+}
+
+.Achievement_Heading{
+  font-size: var(--h1-font-size);
+  text-align: center;
+}
+
+.Achievement_subheading{
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+  text-align: center;
+}
+
+.Achievement_right_section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+
+}
+
+.Achievement_right_section p{
+
+  margin-top: 1rem;
+  margin-left: 1rem;
+  width: 80%;
+  font-weight: 500;
+}
+
+.Achievement_left_section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right:1rem ;
+}
+
+.Achievement_left_section img{
+  border-radius: 3%;
+  border-color: #535c87;
+  border: none;
+  box-shadow: 2px 2px 10px #1f1f1f;
+
+}
+
+@media (max-width: 768px){
+  .Achievement_container{
+    width: 60%;
+   }
+}
+
+@media (max-width: 576px){
+
+  .Achievement_container{
+   width: 70%;
+  }
+
+  .Achievement_section{
+
+    flex-direction: column;
+  }
+
+  .Achievement_left_section{
+    margin-right: 0rem;
+    margin-top: 1rem;
+  }
+
+  .Achievement_right_section{
+    margin-left: -0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+
+
+}
+
+
 /*-------------------------- contact form----------------- */
 
 .contactus-form-container{
   width:100%;
-  /* background-color: rgb(231,231,231); */
+  background-color: rgb(231,231,231);
 }
 
 .contactus-heading{
-  font-size:5em;
-  color:var(--bgOrange);
+  font-size: var(--h1-font-size);
+  text-align: center;
   padding-top: 2rem;
 }
 
 .contactus-sub-heading{
-  font-size:3rem;
-  color:#343d68aa;
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-3);
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -1035,19 +1148,20 @@ a{
   font-size:1.5rem;
 }
 
+@media (max-width: 768px) {
+  .formfield{
+    font-size:14px;
+    font-weight:450;
+  }
+  #submit-btn{
+    font-size: 1.5rem;
+  }
+  .submit-icon{
+    font-size:1.5rem;
+  }
+}
+
 @media (max-width: 400px) {
-  .contactus-heading{
-    margin-top: -2rem;
-    text-align: center;
-    font-size:2em;
-  }
-  
-  .contactus-sub-heading{
-    text-align: center;
-    font-size:1.3rem;
-    margin-top: 1rem;
-    margin-bottom: -2.5rem;
-  }
   .formfield{
     font-size:12px;
     font-weight:400;
