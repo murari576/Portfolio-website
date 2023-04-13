@@ -701,19 +701,19 @@ a{
   }
 
   #project1{
-    background-image: url(./portfolio.jpg.png);
+    background-image: url(./images/projects/portfolio.jpg.png);
   }
 
   #project2{
     margin-left:120px;
-    background-image: url(./Project2.png);
+    background-image: url(./images/projects/Dev-dective.png);
   }
   #project3{
-    background-image: url(./Project3.png);
+    background-image: url(./images/projects/Password-gen.png);
   }
   #project4{
     margin-left:120px;
-    background-image: url(./weatherProject.png);
+    background-image: url(./images/projects/weatherProject.png);
   }
 
   @media (max-width:1300px) {
@@ -1037,7 +1037,7 @@ a{
 }
 
 .Achievement_left_section img{
-  border-radius: 3%;
+  border-radius: 100%;
   border-color: #535c87;
   border: none;
   box-shadow: 2px 2px 10px #1f1f1f;
@@ -1107,12 +1107,14 @@ a{
 .form{
   display:flex;
   flex-direction: column;
+  text-align: center;
   gap:30px;
   width:70%;
   margin: 2rem 5rem;
 }
 
 .formfield-container{
+  margin-top: -3rem;
   width:100%;
 }
 
