@@ -363,8 +363,8 @@ a{
   /* ----------------------media Query---------------- */
   @media (max-width: 576px){
     .user-image{
-      max-height: 120px;
-      max-width: 120px;
+      max-height: 320px;
+      max-width: 320px;
       padding:2.5rem;
       filter:grayscale(1);
       transition:all 1s;
@@ -373,8 +373,8 @@ a{
     
     .user-image img{
       z-index:-9;
-      max-width: 120px;
-      max-height: 85px;
+      max-width: 320px;
+      max-height: 285px;
     }
   }
 
