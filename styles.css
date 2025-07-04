@@ -373,8 +373,8 @@ a{
     
     .user-image img{
       z-index:-9;
-      max-width: 220px;
-      max-height: 185px;
+      max-width: 120px;
+      max-height: 85px;
     }
   }
 
